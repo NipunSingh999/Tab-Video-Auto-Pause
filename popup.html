@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    body {
+      width: 260px;
+      height: 100px;
+      background: linear-gradient(to right, #ff4e50, #f9d423); /* Red to yellow-orange */
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      box-sizing: border-box;
+    }
+
+    h4 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    #toggleBtn {
+      padding: 10px 25px;
+      background: white;
+      color: #d60000;
+      border: 2px solid #d60000;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    #toggleBtn:hover {
+      background: #d60000;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h4>Auto Pause</h4>
+  <button id="toggleBtn">Loading...</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
